@@ -1,4 +1,4 @@
-<?php namespace TheLHC\IpInfo;
+<?php namespace TheLHC\IpInfo\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
