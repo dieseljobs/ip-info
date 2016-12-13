@@ -1,0 +1,28 @@
+{
+    "name": "thelhc/ip-info",
+    "description": "IpInfo Laravel Service Provider",
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "^4.0|^5.0",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "TheLHC\\IpInfo\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TheLHC\\IpInfo\\Test\\": "tests"
+        }
+    },
+    "authors": [
+        {
+            "name": "Aaron Kaczmarek",
+            "email": "aaronmichaelmusic@gmail.com"
+        }
+    ]
+}
