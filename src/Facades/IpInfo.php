@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Facade;
 
-class IpInfoFacade extends Facade {
+class IpInfo extends Facade {
 
     /**
      * Get the registered name of the component.
