@@ -30,6 +30,13 @@ class IpInfoTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('error', $lookup->status);
     }
 
+    public function testItReturnsErrorWithPrivateIp()
+    {
+        $lookup = $this->ipInfo->lookup('10.0.0.0');
+        $this->assertTrue(property_exists($lookup, 'status'));
+        $this->assertEquals('error', $lookup->status);
+    }
+
     public function testItReturnsSuccessWithIp()
     {
         $lookup = $this->ipInfo->lookup('68.119.229.33');
