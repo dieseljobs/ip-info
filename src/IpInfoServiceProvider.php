@@ -12,10 +12,7 @@ class IpInfoServiceProvider extends ServiceProvider
    */
   public function register()
   {
-      $this->app->bind('TheLHC\IpInfo\IpInfoInterface', function($app)
-      {
-          return new IpInfoRepository(new IpInfoInterface());
-      });
+      $this->app->bind('TheLHC\IpInfo\IpInfoInterface', 'TheLHC\IpInfo\IpInfoRepository');
 
       $this->app->bind('TheLHC\IpInfo\IpInfo', function($app)
       {
